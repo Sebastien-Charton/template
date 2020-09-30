@@ -9,3 +9,7 @@ Create a console application with:
 - dependency injection
 - NLog for logging
 - contains appsettings.json and appsettings.Production.json
+
+## WorkerPlus
+
+Worker application with nlog for logging

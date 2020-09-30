@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Sebastien CHARTON",
+    "classifications": [ "Common", "Worker" ],
+    "identity": "WorkerPlus",
+    "name": "WorkerPlus Application",
+    "shortName": "Workerplus",
+    "tags": {
+        "language": "C#"
+    },
+    "sourceName": "WorkerPlus"
+}

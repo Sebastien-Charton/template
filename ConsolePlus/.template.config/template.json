@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Sebastien CHARTON",
+    "classifications": [ "Common", "Console" ],
+    "identity": "ConsolePlus",
+    "name": "ConsolePlus Application",
+    "shortName": "consoleplus",
+    "tags": {
+        "language": "C#"
+    },
+    "sourceName": "ConsolePlus"
+}

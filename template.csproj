@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0.0</PackageVersion>
+        <PackageId>dotnet-base-plus</PackageId>
+        <Title>dotnet-base-plus</Title>
+        <Authors>Sebastien CHARTON</Authors>
+        <Description>Improved base projects with DI, logging etc...</Description>
+        <PackageTags>dotnet-new;templates;contoso</PackageTags>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright>Copyright (c) Sebastien Charton</Copyright>
+        <RepositoryUrl>https://github.com/Sebastien-Charton/template</RepositoryUrl>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="ConsolePlus\**\*" Exclude="ConsolePlus\**\bin\**;ConsolePlus\**\obj\**" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+</Project>

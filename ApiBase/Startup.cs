@@ -40,7 +40,7 @@ namespace ApiBase
             }
 
             app.ApiResourcesInjectionApp();
-            
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

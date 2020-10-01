@@ -1,7 +1,9 @@
-﻿namespace ConsolePlus
+﻿using System.Threading.Tasks;
+
+namespace ConsolePlus
 {
     public interface IMainService
     {
-        void Run();
+        Task Run();
     }
 }

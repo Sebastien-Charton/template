@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 // DI, Serilog, Settings
@@ -16,7 +17,7 @@ namespace ConsolePlus
             _config = config;
         }
 
-        public void Run()
+        public async Task Run()
         {
             for (int i = 0; i < _config.GetValue<int>("LoopTimes"); i++)
             {

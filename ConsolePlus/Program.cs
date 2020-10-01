@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 
 // DI, Serilog, Settings
 
@@ -12,18 +13,10 @@ namespace ConsolePlus
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var builder = new ConfigurationBuilder();
             BuildConfig(builder);
-
-            // Log.Logger = new LoggerConfiguration()
-            //     .ReadFrom.Configuration(builder.Build())
-            //     .Enrich.FromLogContext()
-            //     .WriteTo.Console()
-            //     .CreateLogger();
-
-            // Log.Logger.Information("Application Starting");
 
             var host = Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
@@ -41,7 +34,7 @@ namespace ConsolePlus
                 .Build();
 
             var svc = ActivatorUtilities.CreateInstance<MainService>(host.Services);
-            svc.Run();
+            await svc.Run();
         }
 
         static void BuildConfig(IConfigurationBuilder builder)

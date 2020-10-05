@@ -25,5 +25,22 @@ namespace WorkerPlus
                 await Task.Delay(1000, stoppingToken);
             }
         }
+
+        public override async Task StartAsync(CancellationToken cancellationToken)
+        {
+            // DO YOUR STUFF HERE
+            await base.StartAsync(cancellationToken);
+        }
+
+        public override async Task StopAsync(CancellationToken cancellationToken)
+        {
+            // DO YOUR STUFF HERE
+            await base.StopAsync(cancellationToken);
+        }
+
+        public override void Dispose()
+        {
+            // DO YOUR STUFF HERE
+        }
     }
 }

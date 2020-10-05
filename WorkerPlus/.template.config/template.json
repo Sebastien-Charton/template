@@ -4,7 +4,7 @@
     "classifications": [ "Common", "Worker" ],
     "identity": "WorkerPlus",
     "name": "WorkerPlus Application",
-    "shortName": "Workerplus",
+    "shortName": "workerplus",
     "tags": {
         "language": "C#"
     },

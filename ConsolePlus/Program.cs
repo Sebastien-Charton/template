@@ -7,8 +7,6 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
-// DI, Serilog, Settings
-
 namespace ConsolePlus
 {
     class Program

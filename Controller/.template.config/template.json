@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "author": "Sebastien CHARTON",
+    "classifications": [
+        "Common",
+        "Code"
+    ],
+    "identity": "Controller",
+    "name": "Controller file",
+    "shortName": "controller",
+    "tags": {
+        "language": "C#"
+    },
+    "sourceName": "ControllerFile",
+    "sources": {
+        "source": "./",
+        "target": "./Controllers/"
+    }
+}
